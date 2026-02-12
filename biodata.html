@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+    <link rel="stylesheet" href="desain biodata.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Biodata</h1>
+    <p><b>Username:</b> <span id="username"></span></p>
+    <p><b>Umur:</b> <span id="umur"></span></p>
+    <p><b>Alamat:</b> <span id="alamat"></span></p>
+    <p><b>No HP:</b> <span id="nohp"></span></p>
+    <p><b>Hobi:</b> <span id="hobi"></span></p>
+    <p><b>Email:</b> <span id="email"></span></p>
+</div>
+
+<script>
+document.getElementById("username").textContent = localStorage.getItem("username");
+document.getElementById("umur").textContent     = localStorage.getItem("umur");
+document.getElementById("alamat").textContent   = localStorage.getItem("alamat");
+document.getElementById("nohp").textContent     = localStorage.getItem("nohp");
+document.getElementById("hobi").textContent     = localStorage.getItem("hobi");
+document.getElementById("email").textContent    = localStorage.getItem("email");
+</script>
+
+</body>
+</html>
